@@ -1,0 +1,126 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --clr-primary-one: hsl(158, 36%, 37%);
+    --clr-primary-two: hsl(30, 38%, 92%);
+
+    --clr-neutral-dark: hsl(212, 21%, 14%);
+    --clr-neutral: hsl(228, 12%, 48%);
+    --clr-neutral-light: hsl(0, 0%, 100%);
+
+    --fw-normal: 500;
+    --fw-bold: 700;
+}
+
+/* typography */
+body {
+    color: var(--clr-neutral);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.875rem;
+    font-weight: var(--fw-normal);
+    line-height: 1.7;
+}
+
+.item-type {
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+.item-name {
+    color: var(--clr-neutral-dark);
+    font-family: 'Fraunces', serif;
+    font-weight: var(--fw-bold);
+    line-height: 1;
+}
+
+.price {
+    color: var(--clr-primary-one);
+    font-family: 'Fraunces', serif;
+    font-weight: var(--fw-bold);
+    font-size: 2rem;
+}
+
+.sale-price {
+    text-decoration: line-through;
+}
+
+.button-text {
+    color: var(--clr-neutral-light);
+    font-family: 'Montserrat', sans-serif;
+    font-weight: var(--fw-bold);
+    letter-spacing: 1.5px;
+}
+
+/* layout */
+body {
+    background-color: var(--clr-primary-two);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    background-color: var(--clr-neutral-light);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 1em;
+    border-radius: 15px;
+}
+
+.card-image {
+    background-image: url(../images/image-product-mobile.jpg);
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 15rem;
+    border-radius: 15px 15px 0 0;
+}
+
+.card-content {
+    padding: 1em;
+}
+
+.item-type {
+    width: 100%;
+    margin: 0.5em 0 0.5em 0;
+}
+
+.item-name {
+    margin-bottom: 0.5em;
+    margin-right: 1em;
+}
+
+.item-description {
+    margin-bottom: 3em;
+}
+
+.item-price-container,
+.button-container {
+    display: flex;
+    flex-direction: row;
+}
+
+.sale-price {
+    display: flex;
+    align-items: center;
+    margin-left: 2em;
+}
+
+.cart-button {
+    cursor: pointer;
+    background-color: var(--clr-primary-one);
+    padding: 1em;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    width: 100%;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+}
